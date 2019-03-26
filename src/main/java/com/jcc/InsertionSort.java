@@ -17,36 +17,26 @@ import java.util.Arrays;
  * 6.重复步骤2~5
  * arr 待排序数组
  */
-public class Insertion {
+public class InsertionSort {
 
     public static void  InsertionSort1(int[] arr) {
-//        for (int i = 1; i < arr.length; i++) {
-//            int temp = arr[i];   // 取出下一个元素，在已经排序的元素序列中从后向前扫描
-//            for (int j = i; j >= 0; j--) {
-//                if (j > 0 && arr[j-1] > temp) {
-//                    arr[j] = arr[j-1];   // 如果该元素（已排序）大于取出的元素temp，将该元素移到下一位置
-//                    System.out.println("Temping:  " + Arrays.toString(arr));
-//                } else {
-//                    // 将新元素插入到该位置后
-//                    arr[j] = temp;
-//                    System.out.println("Sorting:  " + Arrays.toString(arr));
-//                    break;
-//                }
-//            }
-//        }
-//        System.out.println("结果集：" + Arrays.toString(arr));
-
-        for(int i = 1; i < arr.length; i++) {
-            int temp = arr[i];
+        for (int i = 1; i < arr.length; i++) {
+            int temp = arr[i];   // 取出下一个元素，在已经排序的元素序列中从后向前扫描
             for (int j = i; j >= 0; j--) {
-                if(j > 0 && arr[j-1] > temp) {
-                    arr[j] = arr[j-1];
+                System.out.println("j的值" + j + "：  i的值" + i);
+                if (j > 0 && arr[j-1] > temp) {
+                    arr[j] = arr[j-1];   // 如果该元素（已排序）大于取出的元素temp，将该元素移到下一位置
+                    System.out.println("Temping:  " + Arrays.toString(arr));
+                    System.out.println("temp的值：" + temp);
                 } else {
+                    // 将新元素插入到该位置后
                     arr[j] = temp;
+                    System.out.println("Sorting:  " + Arrays.toString(arr));
                     break;
                 }
             }
         }
+        System.out.println("结果集：" + Arrays.toString(arr));
     }
 
     // 交换次数较多的实现
@@ -68,7 +58,7 @@ public class Insertion {
     public static void main(String[] args) {
         int[] arr = {3, 6, 8, 45, 1, 25, 89, 6};
         System.out.println("1111");
-//        InsertionSort1(arr);
-        InsertionSort2(arr);
+        InsertionSort1(arr);
+//        InsertionSort2(arr);
     }
 }
