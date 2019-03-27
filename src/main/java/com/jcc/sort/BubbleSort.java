@@ -1,4 +1,4 @@
-package com.jcc;
+package com.jcc.sort;
 
 import java.util.Arrays;
 

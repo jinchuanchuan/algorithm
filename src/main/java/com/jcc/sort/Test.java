@@ -1,6 +1,4 @@
-package com.jcc;
-
-import javax.swing.*;
+package com.jcc.sort;
 
 public class Test {
     public static void main(String[] args) {
