@@ -6,6 +6,7 @@ public class Test {
 //选择排序
 //        SelectionSort.selectionSort(arr);
 //        冒泡排序
-        BubbleSort.BubbleSort(arr);
+//        BubbleSort.BubbleSort(arr);
+        QuickSort.quickSort(arr, 0, 7);
     }
 }
