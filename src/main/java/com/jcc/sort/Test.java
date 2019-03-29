@@ -10,6 +10,13 @@ public class Test {
 //        shell排序
 //        ShellSort.sort(arr);
 //        快速排序
-        QuickSort.quickSort(arr, 0, 7);
+//        QuickSort.quickSort(arr, 0, 7);
+//        堆排序
+//        HeapSort.heapSort(arr);
+//        归并排序
+//        MergingSort.mergingSort(arr);
+//        基数排序
+        RadixSort.radixSort(arr);
     }
+
 }
