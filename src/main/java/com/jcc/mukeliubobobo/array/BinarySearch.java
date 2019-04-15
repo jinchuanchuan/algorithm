@@ -1,5 +1,7 @@
 package com.jcc.mukeliubobobo.array;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 /**
  * @description: 二分查找，实在有序数组中进行的；首先要确定边界值，再选出中间值mid；
  * 之后再折中寻找。
@@ -22,5 +24,9 @@ public class BinarySearch {
             }
         }
         return -1;
+    }
+    private static final AtomicLong nextUniqueNumber = new AtomicLong();
+    public static void main(String[] args) {
+        System.out.println(nextUniqueNumber);
     }
 }
