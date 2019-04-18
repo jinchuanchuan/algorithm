@@ -1,7 +1,8 @@
 package com.jcc.java.queue.doSelfBlockingQueue;
 
 /**
- * @description:
+ * @description: 自定义实现阻塞队列
+ * https://mp.weixin.qq.com/s?__biz=MzU0OTk3ODQ3Ng==&mid=2247484984&idx=1&sn=0d06df51824fff38ff678030aa467a63&chksm=fba6ee3bccd1672d37a7d7598a91026819fe0533c6752088efe9ec67d138d230fb9d45f822e7&mpshare=1&scene=1&srcid=0413lsQd00ecXTR0KouYoHMF&key=a9d4b584c7843618fc35abea4d3364fdec1faaa088feb5d6b14585b528b7ac9e2cbbae835b72471ae1e5f1648139055f997c2ffc462e2893328a0620902c1937ecb0425cf5827b9babc5fe823fa62f59&ascene=1&uin=MTYxNjc4MDExOQ%3D%3D&devicetype=Windows+10&version=62060739&lang=zh_CN&pass_ticket=rBpZrNeHVmE5XVrNqtHLXs4mmGko40sJnjoA6mc4KcYwEHAuxqRsK9vCAoLrHJmc
  * @author: jcc
  * @date: 2019-04-18 11:38
  * @Modified By:
