@@ -22,7 +22,7 @@ public class InsertionSort {
     public static void  InsertionSort1(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int temp = arr[i];   // 取出下一个元素，在已经排序的元素序列中从后向前扫描
-            for (int j = i; j >= 0; j--) {
+            for (int j = i; j > 0; j--) {
                 System.out.println("j的值" + j + "：  i的值" + i);
                 if (j > 0 && arr[j-1] > temp) {
                     arr[j] = arr[j-1];   // 如果该元素（已排序）大于取出的元素temp，将该元素移到下一位置
