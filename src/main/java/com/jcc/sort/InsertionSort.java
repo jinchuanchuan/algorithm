@@ -41,7 +41,7 @@ public class InsertionSort {
 
     // 交换次数较多的实现
     public static void InsertionSort2(int[] arr) {
-        for(int i = 0; i <= arr.length - 1; i++) {
+        for(int i = 1; i <= arr.length - 1; i++) {
             for(int j = i; j > 0; j--) {
                 if(arr[j-1] < arr[j]) {
                     break;
@@ -55,10 +55,23 @@ public class InsertionSort {
         }
     }
 
+    public static void InsertionSort3(int[] arr) {
+        for(int i = 1; i < arr.length; i++) {
+            //寻找元素arr[i]合适的插入位置
+            int temp = arr[i];
+            int j;// j保存元素temp应该插入的位置
+            for( j = i; j > 0 && arr[j-1] > temp; j--) {
+                arr[j] = arr[j-1];
+            }
+            arr[j] = temp;
+            System.out.println("Sorting：" + Arrays.toString(arr));
+        }
+    }
+
     public static void main(String[] args) {
-        int[] arr = {3, 6, 8, 45, 1, 25, 89, 6};
+        int[] arr = {3, 6, 8, 45, 1, 25, 89, 7};
         System.out.println("1111");
-        InsertionSort1(arr);
-//        InsertionSort2(arr);
+//        InsertionSort3(arr);
+        InsertionSort2(arr);
     }
 }

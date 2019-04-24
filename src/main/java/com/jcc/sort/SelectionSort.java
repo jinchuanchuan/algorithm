@@ -13,7 +13,7 @@ import java.util.Arrays;
 public class SelectionSort {
 
     public static void selectionSort(int[] arr) {
-        for(int i = 0; i < arr.length - 1; i++) {
+        for(int i = 0; i < arr.length - 1 ; i++) {
             int min = i;
             for(int j = i + 1; j < arr.length; j++) {   //选出之后待排序中值最小的位置
                 if(arr[j] < arr[min]) {
@@ -25,7 +25,7 @@ public class SelectionSort {
                 arr[min] = arr[i];
                 arr[i] = temp;
             }
-            System.out.println("Sorting:  " + Arrays.toString(arr));
+            System.out.println("Sorting:  " + Arrays.toString(arr) + "---------i:" + i);
         }
     }
 }
