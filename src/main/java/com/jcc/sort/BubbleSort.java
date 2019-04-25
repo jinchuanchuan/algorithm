@@ -1,5 +1,6 @@
 package com.jcc.sort;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**
@@ -29,4 +30,19 @@ public class BubbleSort {
         }
     }
 
+    public static void BubbleSort01(int[] arr) {
+        boolean swapped = true; //没有交换，证明排序完成
+        while(swapped) {
+            swapped = false;
+            for (int i = 0; i < arr.length - 1; i++) {
+                if(arr[i] > arr[i + 1]) {
+                    int temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    swapped = true;
+                }
+            }
+            System.out.println("Sorting:  " + Arrays.toString(arr));
+        }
+    }
 }

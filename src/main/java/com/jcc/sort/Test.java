@@ -7,10 +7,12 @@ public class Test {
         SelectionSort.selectionSort(arr);
 //        冒泡排序
 //        BubbleSort.BubbleSort(arr);
+//        BubbleSort.BubbleSort01(arr);
 //        shell排序
 //        ShellSort.sort(arr);
 //        快速排序
 //        QuickSort.quickSort(arr, 0, 7);
+        QuickSort.quickSort1(arr, 0, 7);
 //        堆排序
 //        HeapSort.heapSort(arr);
 //        归并排序

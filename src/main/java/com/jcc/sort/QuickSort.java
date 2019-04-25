@@ -32,4 +32,30 @@ public class QuickSort {
         quickSort(arr, low, left-1);
         quickSort(arr, left+1, high);
     }
+    public static void quickSort1(int[] arr, int low, int high){
+        if(low >= high){
+            return;
+        }
+        if(arr.length <= 0) {
+            return;
+        }
+        int left  = low;
+        int right = high;
+
+        int temp = arr[left];
+        while(left < right) {
+            while (left < right && arr[right] > temp) {
+                right--;
+            }
+            arr[left] = arr[right];
+            while (left < right && arr[left] <= temp) {
+                left++;
+            }
+            arr[right] = arr[left];
+        }
+        arr[left] = temp;
+        System.out.println("Sorting: " + Arrays.toString(arr));
+        quickSort1(arr,low,left - 1 );
+        quickSort1(arr,left + 1,high );
+    }
 }
